@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Галоўная</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo-icon.png" alt="logotip">
+                    <h1> Trip-hata</h1>
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+                <ul class="menu-ul">
+                    <li class="menu-li">
+                        <a href="./index.html"> <img src="./images/home-icon.png" alt="Icon at home"> Галоўная</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./order.html"> <img src="./images/choose-tour-icon.png" alt="Icon to choose tour"> Замовіць
+                            тур</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./reviews.html"> <img src="./images/reviews-icon.png" alt="Icon reviews"> Водгукі</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./contacts.html"> <img src="./images/contacts-icon.png" alt="Icon contacts"> Кантакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="item">
+            <img src="./images/slide1.jpg" alt="first-slide-Georgia">
+            <div class="slideText">
+                Шмат, хто лічыць, што Грузія - лепшае месца на Зямлі. Яны маюць рацыю. Безліч гор і безліч прасторы. А
+                віно... Тбілісі, Батумі, Казбегі і Кахеція ў адным туры <br>
+                <a href="./order.html">Замовіць...</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/slide2.jpg" alt="second-slide-Seychelles">
+            <div class="slideText">
+                Райскі адпачынак на Сейшэлах. Выспы Маэ і Праслін - Вы адчуеце сябе на ўскрайку свету. Сняданкі ў
+                кошце.<br>
+                <a href="./order.html">Замовіць...</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/slide3.jpg" alt="third-slide-Greece">
+            <div class="slideText">
+                Што можа быць прыгажэйшым за Грэцыю летам? Рэшткі антычнай цывілізацыі, міфічныя Афіны і бязмежны
+                Сантарыні. Вылет: Гродна, Брэст, Мінск <br>
+                <a href="./order.html">Замовіць...</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/slide4.jpg" alt="fourth-slide-Turkey">
+            <div class="slideText">
+                Турцыя: неверагодная Кападоккія, велічны Стамбул і непараўнальны Олюдзініс. Ляцім з Менску <br>
+                <a href="./order.html">Замовіць...</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/slide5.jpg" alt="fiveth-slide-Shri-Lanka">
+            <div class="slideText">
+                Неабсяжныя пясчаныя пляжы і пальмы, прасторныя даліны і маляўнічыя вадаспады, шырокія рэкі і трапічныя
+                лясы. Шры-Ланка - адчуй рай на Зямлі<br>
+                <a href="./order.html">Замовіць...</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/slide6.png" alt="sixth-slide-Spanish">
+            <div class="slideText">
+                Туры ў Гіспанію - гэта Фламенкa, творчасць Антоніа Гаўдзі, Сальвадора Далі і Пабла Пікаса. Блакітнае
+                неба, шумныя бары і, вядома ж, футбол... Закахацца ў Іспанію — гэта назаўжды!<br>
+                <a href="./order.html">Замовіць...</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="./images/slide7.jpg" alt="seventh-slide-Brasilia">
+            <div class="slideText">
+                Бразілія - гэта недасяжныя горы, шумныя гіганцкія вадаспады ў нетрах джунгляў і, вядома, грандыёзны
+                бразільскі карнавал у Рыа. Ляцім з Масквы альбо Кіева <br>
+                <a href="./order.html">Замовіць...</a>
+            </div>
+        </div>
+
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+        <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(7)"></span>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="container ">
+            <h2 class="advantages-title">Эксклюзіўныя вандроўкі па беларускіх коштах. Падарожнічайце - гэта па-мінуламу
+                каштуе таго...</h2>
+        </div>
+        <div class="container">
+            <div class="figure">
+                <h3>Унікальныя маршруты</h3>
+                <p>Наша каманда наведала больш за 110 краін свету. Ніякіх шаблонных маршрутаў - мы сплануем для Вас
+                    падарожжа мары.</p>
+            </div>
+            <div class="figure">
+                <h3>Лаяльныя кошты</h3>
+                <p>Шукаем квіткі на самалёты на акцыях, браніруем апартаменты па лепшых коштах. Празрыстая бухгалтэрыя
+                    кожнай вандроўкі.</p>
+            </div>
+            <div class="figure">
+                <h3>Падтрымка 24/7</h3>
+                <p>Адбылося нешта непрыемнае пад-час адпачынку? Смела тэлефануйце з любой кропкі свету. Што б ні
+                    здарылась,
+                    мы побач і дапаможам.</p>
+            </div>
+            <div class="figure">
+                <h3>Набыць анлайн</h3>
+                <p>Вы можаце абраць і аплаціць існуючы тур альбо цалкам бесплатна замовіць арганізацыю і разлік для
+                    ўласнай
+                    вандроўкі анлайн.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="seach-tours">
+        <div class="container">
+            <form action="#" method="get" autocomplete="on">
+                <fieldset class="form">
+                    <div class="form-field">
+                        <label for="city">Горад адлёту:</label>
+                        <select name="city" id="city" class="form-field__input" required>
+                            <option value="minsk">Мінск</option>
+                            <option value="grodno">Гродна</option>
+                            <option value="kiev">Кіеў</option>
+                            <option value="moscow">Масква</option>
+
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="direction">Накірунак:</label>
+                        <select name="direction" id="direction" class="form-field__input" required>
+                            <option value="france">Францыя</option>
+                            <option value="japan">Японія</option>
+                            <option value="latvia">Латвія</option>
+                            <option value="germany">Германія</option>
+                            <option value="spanish">Гішпанія</option>
+                            <option value="netherland">Галандыя</option>
+                            <option value="englang">Англія</option>
+                            <option value="poland">Польшча</option>
+                            <option value="mir">Мірскі замак</option>
+                            <option value="norway">Нарвегія</option>
+                            <option value="usa">ЗША</option>
+                            <option value="argentina">Аргентына</option>
+                            <option value="turkey">Турцыя</option>
+                            <option value="egypt">Егіпет</option>
+                            <option value="maldivy">Мальдывы</option>
+                            <option value="bali">Балі</option>
+                            <option value="praga">Прага</option>
+                            <option value="china">Кітай</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="flying-first-date">Дата адлёту</label>
+                        <input type="date" name="flying-first-date" id="flying-first-date" class="form-field__input" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="flying-last-date">Дата вяртання </label>
+                        <input type="date" name="flying-last-date" id="flying-last-date" class="form-field__input" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="people-number">Колькасць турыстаў</label>
+                        <input type="number" name="people-number" id="people-number" class="form-field__input" required />
+                    </div>
+                    <div class="form-field">
+                        <input type="submit" name="search" id="search-btn" class="primary-button form-field__input" value="Знайсці" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="tours">
+        <div class="container">
+            <div class="tours-list">
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Францыя</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Знаёмства з Францыяй лепш за ўсё пачаць з горада рамантыкаў - Парыжа. Вы апынецеся ў цэнтры
+                            творчай атмасферы Манмартра, пазнаёміцесь з інтрыгамі Сярэднявечча, ўбачыце ўласнымі вачамі
+                            сусветныя шэдэўры ў Луўры і атрымаеце асалоду ад неверагоднай французскай кухні! Эйфелева
+                            вежа, Сабор Парыжскай Божай Маці, Опера, Сарбона, Трыумфальная арка - пачніце французскае
+                            знаёмства з вытанчанага!
+                        </div>
+                        <img src="./images/tours/tour_1.jpg" alt="Францыя" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 300 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Японія</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Японія абсалютна прыгожая ў любы час. Не важна, квітнее сакура ці вы заспелі сезон
+                            чырвонага лісця мімодзі, уражанні не пакінуць вас доўга. Аб'екты падарожжа здзівяць не
+                            толькі сваёй веліччу і спадчынай, але і пацешаць багаццем колераў. Вы паспрабуеце японскую
+                            гарбату і адчуеце дух самурайскіх традацый. Маршрут:
+                            Токіа-Хаконэ-Асака-Кіёта-Окаяма-Котохира-Даліна Ія-Такамацу-Токіа
+                        </div>
+                        <img src="./images/tours/tour_2.jpg" alt="Японія" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 1200 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Латвія</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Для падарожнікаў Латвія - гэта знаходка. Гэта зялёная краіна з шырока раскінутымі лясамі і
+                            некранутай прыродай. Гэта краіна з пяшчанымі пляжамі, якія знаходзяцца на адлегласці
+                            выцягнутай рукі ад гарадоў з іх гістарычнымі і культурнымі традыцыямі, багатай архітэктурай
+                            і займальнымі славутасцямі. Спакойны, быццам бы - застылы, рух жыцця ў вёсках, і сучасныя
+                            мегаполісы з бязмежна гасціннымі людзьмі.
+                        </div>
+                        <img src="./images/tours/tour_3.jpg" alt="Латвія" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 150 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Германія</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Туры ў Германію - гэта магчымасць палюбавацца вытанчанымі Палацамі і замкамі,
+                            старажытнымі Універсітэтамі, сучасныя выставачныя цэнтрамі, пабываць у старадаўніх мястэчках
+                            і разгледзець неверагодныя калекцыі найбагацейшых музеяў Еўропы, акунуцца ў святочныя
+                            традыцыі краіны, наведаць шматлікія фестывалі і адчуць дух сапраўднай Германіі. І канечне,
+                            не абыдземся без дэгустацыі піва!
+                        </div>
+                        <img src="./images/tours/tour_4.jpg" alt="Германія" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 400 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Гішпанія</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Уявіце, што прачынаецесь ад першых прамянёў сонца у Гранадзе, а засынаеце
+                            пасля незабыўнага фламенка пад гукі севільскіх мячэцяў. Раніцай захапляецеся працамі
+                            геніяў еўрапейскага жывапісу ў музеі Прада, днём назіраеце незабыўную карыду, а ўвечары
+                            акунаецесь у чараўніцтва святла і музыкі фантанаў ў Барселоне. Гішпанія - краіна, якую
+                            кахаеш першага позірку.
+                        </div>
+                        <img src="./images/tours/tour_5.jpg" alt="Гішпанія" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 300 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Галандыя</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Ван Гог, сыр і кварталы «чырвоных ліхтароў», поўная свабода нораваў і кранальныя
+                            старадаўнія мястэчкі. "Чароўныя" кексы і Тэатр Casa Rosso, узведзенае ў культ веласіпеднае
+                            жыццё, парк цюльпанаў Кекенхоф і палотны Рэмбрандта нікога не пакінуць
+                            абыякавым. Дэлфт з найпрыгажэйшым замкам Присенхоф і Ратэрдам з самым
+                            вялікім марскім портам ў Еўропе. Уражанняў безліч...
+                        </div>
+                        <img src="./images/tours/tour_6.jpg" alt="Галандыя" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 500 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Англія</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Неверагоднае разнастайнасць ландшафтаў - горы, дзікія пусткі, балоты, крышталёва чыстыя
+                            азёры,выспы — і ўсё не далей, чым у двух гадзінах падарожжа. Легендарныя славутасці - усе
+                            пра іх чыталі, але мала хто назіраў ужывую: Стоўнхэндж, Кентэрберы, Біг-Бэн. Магчымасць
+                            убачыць каралеўскую сям'ю. Забавы на любы густ і бюджэт - ад вячорак у англійскай пабе і да
+                            пахода па Кэррік рэд-канатным мосце над безданню.
+                        </div>
+                        <img src="./images/tours/tour_7.jpg" alt="Англія" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 700 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Польшча</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Адпачынак у Польшчы - гэта калейдаскоп уражанняў, што надоўга застаюцца ў памяці. Татры -
+                            самая высокая горная сістэма Карпат - дзеліцца з кожным прыгажосцю глыбокіх далін, снежных
+                            вяршыняў і шматлікіх азёр. Балтыйскае ўзбярэжжа падаруе камфортны і недарагі адпачынак на
+                            моры, у камплект прыкладаюцца чыстыя пяшчаныя пляжы і развітая інфраструктура еўрапейскіх
+                            гарадкоў.
+                        </div>
+                        <img src="./images/tours/tour_8.jpg" alt="Польшча" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 100 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Мірскі замак</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Мірскі замак сёння - вялізны комплекс з музеем, бальныя залы, рэстаран з аўтэнтычнай кухняй.
+                            У замку праводзяцца фестывалі, выставы і канцэрты, нават вясельныя цырымоніі. Унутры - 39
+                            гісторыка-культурных экспазіцый. Вы даведаецесь пра апошнія падзеі ў межах замку, мясцовыя
+                            легенды і паданні, пабачыце даспехі, інсталяцыі, карціны і застанецесь пад уражаннем ад
+                            нацыянальнага каларыту.
+                        </div>
+                        <img src="./images/tours/tour_9.jpg" alt="Мірскі замак" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 50 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Нарвегія</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Нарвегія - гэта краіна адважных вікінгаў і мараплаўцаў, вялікіх падарожнікаў і чаруючых
+                            фіёрдаў. Частка яе размешчана за Паўночным палярным кругам. Клімат тут суровы, з багатымі
+                            снегападамі. З - за блізкасці да Паўночнага канцавосся зімы ў Нарвегіі доўгія, марозныя, а ў
+                            канцы снежня самая доўгая палярная ноч. Улетку ж наадварот, сонца не заходзіць амаль круглыя
+                            суткі.
+                        </div>
+                        <img src="./images/tours/tour_10.jpg" alt="Нарвегія" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 700 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">ЗША</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            ЗША-дзіўная краіна, поўная кантрастаў і магчымасцяў, яна падарыла свету джынсы, джаз,
+                            Макдоналдс, Мікі Мауса і каўбойскія фільмы. Пад-час туру Вы атрымаеце асалоду ад
+                            прыгажосцяў прыродных запаведнікаў і нацыянальных паркаў, паспрабуеце сонечна-марскія ванны
+                            на Маямі-біч, наведаеце Вялікі Каньён, пройдзецеся па Галівудскім бульвары і згуляеце на
+                            поспех у казіно Лас-Вегаса.
+
+                        </div>
+                        <img src="./images/tours/tour_11.jpg" alt="ЗША" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 1600 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Аргентына</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Радзіма танга, грамадны стейк-хаус, краіна вялізных рэк, вільготных тропікаў, чырвонай зямлі
+                            і велічных джунгляў — Аргенціна — падорыць вам незабыўныя ўражанні. Вы адчуеце
+                            каларытную атмасферу Буэнас-Айрэса, наведайце найпрыгажэйшы паўвостраў Вальдэс, Азёрны край
+                            Барілоча і грандыёзныя Вадаспады Ігуасу. Мы паглядзім на танга ў выкананні звычайных
+                            аргентынцаў і іскрава станцуем.
+                        </div>
+                        <img src="./images/tours/tour_12.jpg" alt="Аргентына" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 1200 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Турцыя</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Турцыя - легендарнае дзяржава, менавіта тут разгортвалася наша гісторыя. Тут вынайшлі грошы
+                            і пабудавалі першыя храмы, заснавалі Трою і разбурылі яе падчас Траянскай вайны. Менавіта
+                            адсюль Аляксандр Македонскі пачаў будаваць сваю імперыю. Тур у Стамбул дазволіць далучыцца
+                            да тысячагадовай гісторыі, а сонечнае паўднёвае ўзбярэжжа адкажа на пытанне, што такое
+                            сапраўдны рэлакс.
+                        </div>
+                        <img src="./images/tours/tour_13.jpg" alt="Турцыя" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 300 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Егіпет</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Егіпет - квінтэсэнцыя паўднёвых традыцый і рытуалаў, тут павінен пабываць кожны. Велічныя
+                            піраміды наблізяць да разгадкі старажытнай цывілізацыі даліны Ніла, а на ўзбярэжжы вас
+                            чакаюць знакамітыя пляжы. Само мора, самае цёплае ў свеце, уяўляе сабой сапраўды прыроднае
+                            цуд-дзіўная фауна, каралавыя рыфы і сакрэты патанулых караблёў. Ідэальнае месца, каб
+                            адпачыць усёй см'ёй.
+                        </div>
+                        <img src="./images/tours/tour_14.jpg" alt="Егіпет" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 250 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Мальдывы</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Мальдывы-гэта адпачынак на цудоўных пляжах, найчысцейшая вада, надзвычайны падводны свет.
+                            Шматлікія віды каралаў, надзвычай багаты падводны свет і крышталёва чыстая вада (бачнасць
+                            пад вадой - да 40 метраў!) зрабілі Мальдыўскія выспы "Меккай" для аквалангістаў усяго свету.
+                            Туры на Мальдывы - гэта адсутнасць якіх-небудзь візавых працэдур і фармальнасцяў.
+                        </div>
+                        <img src="./images/tours/tour_15.jpg" alt="Мальдывы" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 1000 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Балі</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Для самых дапытлівых розумаў Інданезія - краіна неверагодных магчымасцяў! Адкрыйце
+                            таямніцы храмаў Боробудур і Прамбанан, здзейсніце ўзыходжанне на вулкан Брома, палюбуйцесь
+                            на рознакаляровыя азёры выспы Флорэс, сфатаграфуйце рэліктавых драконаў з выспаў
+                            Комодо і Ринча! Вас чакаюць дзіўныя адкрыцці і загадкавыя гісторыі, прафесійныя гіды і
+                            традыцыйныя вёскі.
+                        </div>
+                        <img src="./images/tours/tour_16.jpg" alt="Балі" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 2000 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Прага</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Чэхія - казачная краіна ў цэнтры Еўропы. Тур пазнаёміць вас з сярэднявечнымі замкамі,
+                            архітэктурнымі помнікамі самых разнастайных стыляў (раманскі, позні Гатычны Рэнесанс, Барока
+                            і ракако, класіцызм і мадэрн). Сталіца Чэхіі, "Злата Прага" - прызнана адным з
+                            найпрыгажэйшых гарадоў свету. Асабліва цікава ўбачыць калядныя выставы ў Празе - адчуць смак
+                            грогу пад бой курантаў.
+                        </div>
+                        <img src="./images/tours/tour_17.jpg" alt="Прага" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 350 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+                <div class="tours-item">
+                    <a href="./order.html" class="tours-item__name tour-item-js">Кітай</a>
+                    <div class="tours-item__logo__box">
+                        <div class="tour-description">
+                            Паднябесная! Так называюць гэтую казачную краіну, вядомую сваёй шматвяковай культурай,
+                            неверагоднай прыгажосці прыроднымі багаццямі, адным з захаваных цудаў свету – Вялікай
+                            кітайскай сцяной. Трэці ў рэйтынгу наведвальнасці, Кітай цяжка зразумець, але можна
+                            наблізіцца да разгадкі глыбіні яе філасофіі, тут старажытная культура захавалася да нашых
+                            дзён, а прырода засталася нязведанай.
+                        </div>
+                        <img src="./images/tours/tour_18.jpg" alt="Кітай" class="tours-item__logo">
+                    </div>
+                    <div class="tours-item__price">ад 1200 $</div>
+                    <a href="./order.html" class="primary-button primary-button__margin-none tour-item-js">Замовіць</a>
+                </div>
+            </div>
+        </div>
+        <div class="container more-tours-container">
+            <span id="more-tours" class="primary-button downArrow" onclick="showAllTours();">Паказать усе туры</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-menu">
+                <ul class="menu-ul__vertical">
+                    <li class="menu-li">
+                        <a href="./index.html"> <img src="./images/home-icon.png" alt="Icon at home"> Галоўная</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./order.html"> <img src="./images/choose-tour-icon.png" alt="Icon to choose tour"> Замовіць
+                            тур</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./reviews.html"> <img src="./images/reviews-icon.png" alt="Icon reviews"> Водгукі</a>
+                    </li>
+                    <li class="menu-li">
+                        <a href="./contacts.html"> <img src="./images/contacts-icon.png" alt="Icon contacts"> Кантакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <a href="./index.html" class="logo footer-logo__width-full">
+                    <img src="./images/logo-icon.png" alt="logotip">
+                    <h1> Trip-hata</h1>
+                </a>
+            </div>
+            <div class="footer-social">
+                <div class="social-list">
+                    <a href="https://www.facebook.com/" class="social-item">
+                        <img class="social-image" src="./images/facebook.png">
+                    </a>
+                    <a href="https://twitter.com/" class="social-item">
+                        <img class="social-image" src="./images/twitter.png">
+                    </a>
+                    <a href="https://vk.com/" class="social-item">
+                        <img class="social-image" src="./images/vkontakte.png">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-item">
+                        <img class="social-image" src="./images/youtube.png">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-item">
+                        <img class="social-image" src="./images/instagram.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
